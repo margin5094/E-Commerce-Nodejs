@@ -56,7 +56,7 @@ const accessLogStream = fs.createWriteStream(
   {flags: 'a'}
 );
 
-app.use(helmet());
+app.use(helmet({contentSecurityPolicy: false}));
 app.use(compression());
 app.use(morgan('combined', {stream: accessLogStream}));
 
