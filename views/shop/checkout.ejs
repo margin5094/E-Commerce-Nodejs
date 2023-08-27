@@ -22,7 +22,7 @@
             <h4>Please use Country Except India, because we don't support export!</h4>
             <script src="https://js.stripe.com/v3/"></script>
             <script>
-                var stripe = Stripe('pk_test_51KD76PSCG8QCogmV6LVPHy6GViMQ7UlSTPqhVAdvAheDAEHi9NVnrzsThqQY58VN2jC8UXhfmPTVtwsyPbhLjRXV00QeqTRepC');
+                var stripe = Stripe('YOUR_STRIPE_KEY');
                 var orderBtn=document.getElementById('order-btn');
                 orderBtn.addEventListener('click', function(){
                     stripe.redirectToCheckout({
